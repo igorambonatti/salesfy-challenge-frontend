@@ -1,12 +1,32 @@
 import React from "react";
 
-import { Container, Nav, User } from "./styles";
+import { Container, Nav, User, Links } from "./styles";
+
+import logo from "../../assets/logo.svg";
 
 const Header: React.FC = () => {
   return (
     <Container>
-      <Nav></Nav>
-      <User></User>
+      <Nav>
+        <a href="/">
+          <img src={logo} alt="Nubank" />
+        </a>
+        <Links>
+          <a href="/">Início</a>
+          <a href="/">Conta Digital</a>
+          <a href="/">Cartão de crédito</a>
+          <a href="/">Rewards</a>
+          <a href="/">Empréstimo</a>
+          <a href="/">Sobre nós</a>
+          <a href="/">Carreiras</a>
+          <a href="/">Number converter</a>
+        </Links>
+      </Nav>
+
+      <User>
+        <a href="/">Login</a>
+        <button>Quero ser Nubank</button>
+      </User>
     </Container>
   );
 };
