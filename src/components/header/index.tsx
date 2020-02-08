@@ -19,13 +19,13 @@ const Header: React.FC = () => {
           <a href="/">Empréstimo</a>
           <a href="/">Sobre nós</a>
           <a href="/">Carreiras</a>
-          <a href="/">Number converter</a>
+          <a href="/converter">Number converter</a>
         </Links>
       </Nav>
 
       <User>
         <a href="/">Login</a>
-        <button>Quero ser Nubank</button>
+        <button>Pedir meu cartão de crédito</button>
       </User>
     </Container>
   );

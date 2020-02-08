@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 80px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px;

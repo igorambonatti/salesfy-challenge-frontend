@@ -17,11 +17,10 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
   body, input, button {
-    font: 14px, 'Roboto', sans-serif;
+    font-family: 'Graphik-Regular','Gotham SSm A','Gotham SSm B','Helvetica Neue',Helvetica,Arial,sans-serif !important;
   }
   a{
     text-decoration:none;
-    font: 'Roboto', sans-serif
   }
  ul{
    list-style:none;
