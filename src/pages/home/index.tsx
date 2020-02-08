@@ -1,11 +1,11 @@
 import React from "react";
 
 import Header from "../../components/header/index";
-import { Container, Content } from "./styles";
+import { Container, Content, Card } from "./styles";
 
 import converter from "number-to-words";
 
-import Card from "../../assets/Card.png";
+import card from "../../assets/card.png";
 
 const Home: React.FC = () => {
   return (
@@ -19,7 +19,9 @@ const Home: React.FC = () => {
             mãos.
           </span>
         </div>
-        <img src={Card} alt="Imagem mostrando cartão NU" />
+        <Card>
+          <img src={card} alt="Imagem mostrando cartão NU" />
+        </Card>
       </Content>
       {console.log(converter.toWords(125))}
     </Container>
