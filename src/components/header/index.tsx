@@ -25,7 +25,7 @@ const Header: React.FC = () => {
 
       <User>
         <a href="/">Login</a>
-        <button>Pedir meu cartão de crédito</button>
+        <button>Quero ser Nubank</button>
       </User>
     </Container>
   );
