@@ -1,10 +1,19 @@
 import React from "react";
 
-import { Container, Content, User, Scroll, NumberList, Send } from "./styles";
-
+import * as Yup from "yup";
+import { Form, Input } from "@rocketseat/unform";
 import converter from "number-to-words";
 
+import { Container, Content, User, Scroll, NumberList, Send } from "./styles";
+
 const Converter: React.FC = () => {
+  const schema = Yup.object().shape({
+    number: Yup.number().typeError()
+  });
+  function handleSubmit(data: Object) {
+    console.log(data);
+  }
+
   return (
     <Container>
       <Content>
@@ -16,15 +25,15 @@ const Converter: React.FC = () => {
         </div>
         <User>
           <div>
-            <form action="submit">
+            <Form schema={schema} onSubmit={handleSubmit}>
               <Send>
                 <div>
-                  <span>Insira um número:</span>
-                  <input name="user" type="number" />
+                  <label>Insira um número:</label>
+                  <Input name="number" type="number" />
                   <button type="submit">Convert to text</button>
                 </div>
               </Send>
-            </form>
+            </Form>
             <NumberList>
               <Scroll>
                 <li>O número 20 é vinte</li>

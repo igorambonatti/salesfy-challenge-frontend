@@ -14,7 +14,7 @@ export const Content = styled.div`
   justify-items: center;
   height: 350px;
   border-radius: 7px;
-  max-width: 1328px;
+  max-width: 1200px;
   justify-content: center;
   > div {
     padding: 64px;
@@ -23,7 +23,6 @@ export const Content = styled.div`
     align-items: center;
     width: 769px;
     text-align: left;
-
     h1 {
       color: rgb(138, 5, 190);
       font-size: 48px;
@@ -54,6 +53,9 @@ export const User = styled.div`
     justify-content: center;
     > div {
       span {
+        display: flex;
+      }
+      label {
         width: 100px;
         color: #fff;
         font-size: 12px;
