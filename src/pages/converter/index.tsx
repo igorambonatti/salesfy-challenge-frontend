@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, Content, User, Scroll, NumberList } from "./styles";
+import { Container, Content, User, Scroll, NumberList, Send } from "./styles";
 
 import converter from "number-to-words";
 
@@ -15,14 +15,23 @@ const Converter: React.FC = () => {
           </span>
         </div>
         <User>
-          <form action="submit">
-            <div>
-              <span>Insira um número:</span>
-              <input name="user" type="number" />
-              <button type="submit">Convert to text</button>
-            </div>
-            <NumberList></NumberList>
-          </form>
+          <div>
+            <form action="submit">
+              <Send>
+                <div>
+                  <span>Insira um número:</span>
+                  <input name="user" type="number" />
+                  <button type="submit">Convert to text</button>
+                </div>
+              </Send>
+            </form>
+            <NumberList>
+              <Scroll>
+                <li>O número 20 é vinte</li>
+              </Scroll>
+            </NumberList>
+            <span>There’s one numbers translated</span>
+          </div>
         </User>
       </Content>
       {console.log(converter.toWords(125))}

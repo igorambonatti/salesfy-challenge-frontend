@@ -14,6 +14,8 @@ export const Content = styled.div`
   justify-items: center;
   height: 350px;
   border-radius: 7px;
+  max-width: 1328px;
+  justify-content: center;
   > div {
     padding: 64px;
     padding-right: 0px;
@@ -26,7 +28,7 @@ export const Content = styled.div`
       color: rgb(138, 5, 190);
       font-size: 48px;
     }
-    span {
+    > span {
       display: flex;
       width: 471px;
       color: rgb(118, 118, 118);
@@ -36,28 +38,28 @@ export const Content = styled.div`
 `;
 
 export const User = styled.div`
-  display: flex;
-
-  form {
-    padding: 30px;
-    height: 550px;
-    width: 650px;
-    margin: auto;
+  > div {
     background-color: #81259d;
     box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.2);
     border-radius: 8px;
+    padding: 30px;
+    span {
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+
+  form {
+    margin: auto;
     justify-content: center;
     > div {
-      display: block;
       span {
-        margin-top: 30px;
-        margin-left: 116px;
+        width: 100px;
         color: #fff;
         font-size: 12px;
         margin-bottom: 4px;
       }
       input {
-        margin-left: 116px;
         height: 35px;
         background-color: rgba(255, 255, 255, 0);
         font-family: inherit;
@@ -68,12 +70,15 @@ export const User = styled.div`
         font-size: 18px;
         box-sizing: border-box;
         transition: all 0.15s linear;
+        width: 100px;
+        margin-left: 10px;
       }
     }
     button {
       color: #81259d;
+      font-size: 15px;
       margin-left: 20px;
-      height: 35px;
+      height: 40px;
       width: 200px;
       background: #fff;
       border-style: none;
@@ -92,11 +97,22 @@ export const NumberList = styled.div`
   margin-top: 30px;
   height: 150px;
   width: 100%;
+  margin-bottom: 15px;
   background: #fff;
 `;
-
+export const Send = styled.div`
+  display: flex;
+  div {
+    margin: auto;
+  }
+`;
 export const Scroll = styled(PerfectScrollbar)`
-  max-height: 260px;
+  li {
+    font-size: 14px;
+    margin: 3px 0 3px 0;
+    color: #81259d;
+  }
+  max-height: 150px;
   padding: 5px 15px;
   &:hover {
     background: none;
