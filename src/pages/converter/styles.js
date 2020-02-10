@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import PerfectScrollbar from "react-perfect-scrollbar";
+import PerfectScrollbar from 'react-perfect-scrollbar';
 
 export const Container = styled.div`
   display: flex;
@@ -47,7 +47,13 @@ export const User = styled.div`
       font-size: 14px;
     }
   }
-
+  p {
+    color: #fff;
+    font-size: 14px;
+    font-style: none;
+    text-align: center;
+    margin: 10px;
+  }
   form {
     margin: auto;
     justify-content: center;
@@ -96,7 +102,7 @@ export const User = styled.div`
 
 export const NumberList = styled.div`
   margin: auto;
-  margin-top: 30px;
+  margin-top: 10px;
   height: 150px;
   width: 100%;
   margin-bottom: 15px;

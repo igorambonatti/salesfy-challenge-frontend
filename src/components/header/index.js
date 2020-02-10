@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import { Container, Nav, User, Links } from "./styles";
+import { Container, Nav, User, Links } from './styles';
 
-import logo from "../../assets/logo.svg";
+import logo from '../../assets/logo.svg';
 
-const Header: React.FC = () => {
+export default function Header() {
   return (
     <Container>
       <Nav>
@@ -25,10 +25,8 @@ const Header: React.FC = () => {
 
       <User>
         <a href="/">Login</a>
-        <button>Quero ser Nubank</button>
+        <button type="submit">Quero ser Nubank</button>
       </User>
     </Container>
   );
-};
-
-export default Header;
+}

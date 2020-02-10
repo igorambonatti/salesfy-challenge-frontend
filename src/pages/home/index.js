@@ -1,12 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import { Container, Content, Card } from "./styles";
+import { Container, Content, Card } from './styles';
 
-import converter from "number-to-words";
+import card from '../../assets/card.png';
 
-import card from "../../assets/card.png";
-
-const Home: React.FC = () => {
+export default function Home() {
   return (
     <Container>
       <Content>
@@ -21,9 +19,6 @@ const Home: React.FC = () => {
           <img src={card} alt="Imagem mostrando cartão NU" />
         </Card>
       </Content>
-      {console.log(converter.toWords(125))}
     </Container>
   );
-};
-
-export default Home;
+}
