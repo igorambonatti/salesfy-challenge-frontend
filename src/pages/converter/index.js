@@ -36,7 +36,7 @@ export default function Converter() {
               <Send>
                 <div>
                   <label>
-                    Insira um número:
+                    Insert a number:
                     <Input name="number" type="number" />
                   </label>
                   <button type="submit">Convert to text</button>
@@ -45,7 +45,7 @@ export default function Converter() {
             </Form>
             {currentNumber.map(num => (
               <p key={num}>
-                The number {num.number} in English is{' '}
+                The number {num.number} in text format is{' '}
                 {converter.toWords(num.number)}
               </p>
             ))}
@@ -60,7 +60,7 @@ export default function Converter() {
                     ) : (
                       e.number
                     )}{' '}
-                    in English is{' '}
+                    in text format is{' '}
                     {e.number === numbers.length ? (
                       <strong>{converter.toWords(e.number)}</strong>
                     ) : (

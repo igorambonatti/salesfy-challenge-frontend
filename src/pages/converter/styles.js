@@ -53,6 +53,7 @@ export const User = styled.div`
     font-style: none;
     text-align: center;
     margin: 10px;
+    margin-bottom: 5px;
   }
   form {
     margin: auto;
@@ -102,7 +103,7 @@ export const User = styled.div`
 
 export const NumberList = styled.div`
   margin: auto;
-  margin-top: 10px;
+  margin-top: 20px;
   height: 150px;
   width: 100%;
   margin-bottom: 15px;
