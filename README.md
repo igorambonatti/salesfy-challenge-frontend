@@ -8,7 +8,7 @@
 
 ### Layout:
 
-- Projeto construido utilizando o layout do site do banco Nubank como base, implementando uma nova aba com a funcionalidade de conversão de números para texto.
+- Projeto construido utilizando o layout do site do banco Nubank como base, implementando uma nova aba com a funcionalidade de conversão de números para texto
 
 ---
 
@@ -16,9 +16,9 @@
 
 - Inicialmente a página carrega na página inicial de simulação, com o layout inspirado no Nubank
 
--Para acessar a funcionalidade, clique na aba **Number converter**
+- Para acessar a funcionalidade, clique na aba **Number converter**
 
--Insira um numero no campo do texto(numero inteiro) e clique em **Convert to text**, assim o número será convertido e inserido no histórico da sessão.
+- Insira um numero no campo do texto(numero inteiro) e clique em **Convert to text**, assim o número será convertido e inserido no histórico da sessão
 
 ---
 
@@ -43,10 +43,10 @@
 
 ## Considerações sobre o resultado:
 
-- Procurei trazer a ideia do layout da nubank o mais próximo na medida do possivel.
+- Procurei trazer a ideia do layout da nubank o mais próximo na medida do possivel
 
-- O histórico reseta de forma proposital quando há a atualização da página.
+- O histórico reseta de forma proposital quando há a atualização da página
 
 ---
 
-**Obrigado (ツ)**
+**ツ**
